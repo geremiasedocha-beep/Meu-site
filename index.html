@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Site Estático</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Meu Site Estático</h1>
+      <nav>
+        <a href="#home">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Bem-vindo!</h2>
+        <p>Este é um projeto exemplo estático — HTML, CSS e JavaScript prontos para você editar.</p>
+        <a class="btn" href="#about">Saiba mais</a>
+      </div>
+    </section>
+
+    <section id="about" class="content container">
+      <h3>Sobre este projeto</h3>
+      <p>Arquivos básicos para começar um site estático. Estrutura simples e responsiva.</p>
+      <div class="cards">
+        <article class="card">
+          <h4>Fácil de editar</h4>
+          <p>Abra os arquivos no VS Code e faça suas modificações.</p>
+        </article>
+        <article class="card">
+          <h4>Pronto para deploy</h4>
+          <p>Funciona em GitHub Pages ou qualquer servidor estático.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contato</h3>
+      <form id="contact-form">
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="form-status" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 Meu Site Estático — criado por geremiasedocha-beep</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
